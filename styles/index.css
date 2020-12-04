@@ -1,0 +1,104 @@
+body {
+    margin-left: 16%;
+    margin-right: 16%;
+    background: #474747 url(https://line25.com/wp-content/uploads/2009/letterpress/demo/bg.png);
+}
+
+.gameName {
+    font: 70px Tahoma, Helvetica, Arial, Sans-Serif;
+    text-align: center;
+    color: #999;
+    text-shadow: 0 3px 8px #2a2a2a;
+    margin: 10px 10px 40px;
+}
+
+.topWrapper {
+    display: flex;
+}
+
+.pointsContainer {
+    display: grid;
+    grid-template-columns: 200px 100px;
+    grid-gap: 2px;
+}
+
+#msgContainer {
+    width: 100%;
+    text-align: center;
+    font: 48px Tahoma, Helvetica, Arial, Sans-Serif;
+    color: #222;
+    text-shadow: 0 2px 3px #555;
+}
+
+.ico {
+    display: flex;
+    justify-content: flex-start;
+    height: 31px;
+}
+
+.name {
+    display: flex;
+    border: solid 1px grey;
+    font: 24px Tahoma, Helvetica, Arial, Sans-Serif;
+    color: #222;
+    text-shadow: 0 2px 3px #555;
+}
+
+.points {
+    border: solid 1px grey;
+    text-align: center;
+    font: 24px Tahoma, Helvetica, Arial, Sans-Serif;
+    color: #222;
+    text-shadow: 0 2px 3px #555;
+}
+
+.cubesContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+#baks {
+    text-align: center;
+    font: 48px Tahoma, Helvetica, Arial, Sans-Serif;
+    color: #222;
+    text-shadow: 0 2px 3px #555;
+    margin-bottom: 40px;
+}
+
+.buttonsContainer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.buttons {
+    background: #222;
+    outline: none;
+    cursor: pointer;
+    border: 1px solid #999;
+    font: 24px Tahoma, Helvetica, Arial, Sans-Serif;
+    text-align: center;
+    color: #999;
+    text-shadow: 0 3px 8px #2a2a2a;
+    border-radius: 5px;
+}
+
+.buttons:hover {
+    box-shadow: 0 3px 8px #2a2a2a;
+}
+
+.buttons:disabled {
+    cursor: not-allowed;
+}
+
+.selectDesc {
+    text-align: center;
+    font: 24px Tahoma, Helvetica, Arial, Sans-Serif;
+    color: #222;
+    text-shadow: 0 2px 3px #555;
+}
+
+#cubesCount {
+    width: 146px;
+}

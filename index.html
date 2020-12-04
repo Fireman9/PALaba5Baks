@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Бакси</title>
+    <link rel="stylesheet" href="styles/index.css">
+    <link rel="stylesheet" href="styles/cube.css">
+</head>
+<body>
+<div class="gameName">Бакси</div>
+<div class="topWrapper">
+    <div class="pointsContainer">
+        <div class="name">
+            <img class="ico" src="images/person.png">
+            You
+        </div>
+        <div id="playerPoints" class="points">0</div>
+        <div class="name">
+            <img class="ico" src="images/person.png">
+            Computer
+        </div>
+        <div id="aiPoints" class="points">0</div>
+    </div>
+    <div id="msgContainer">Кидок за перший хід</div>
+</div>
+<div class="cubesContainer">
+    <div class="cubeWrapper">
+        <div id="cube1" class="cube" style="transform: rotateX(5deg) rotateY(-5deg) rotateZ(0deg); display: none;">
+            <div class="side side-1">
+                <div class="dot dotCenter"></div>
+            </div>
+            <div class="side side-2">
+                <div class="dot"></div>
+                <div class="dot dotDownRight"></div>
+            </div>
+            <div class="side side-3">
+                <div class="dot"></div>
+                <div class="dot dotCenter"></div>
+                <div class="dot dotDownRight"></div>
+            </div>
+            <div class="side side-4">
+                <div class="dotsWrapper4">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <div class="dotsWrapper4">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+            <div class="side side-5">
+                <div class="dotsWrapper5">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <div class="dotsWrapper5">
+                    <div class="dot dotCenter"></div>
+                </div>
+                <div class="dotsWrapper5">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+            <div class="side side-6">
+                <div class="dotsWrapper6">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <div class="dotsWrapper6">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cubeWrapper">
+        <div id="cube2" class="cube" style="transform: rotateX(5deg) rotateY(-5deg) rotateZ(0deg);">
+            <div class="side side-1">
+                <div class="dot dotCenter"></div>
+            </div>
+            <div class="side side-2">
+                <div class="dot"></div>
+                <div class="dot dotDownRight"></div>
+            </div>
+            <div class="side side-3">
+                <div class="dot"></div>
+                <div class="dot dotCenter"></div>
+                <div class="dot dotDownRight"></div>
+            </div>
+            <div class="side side-4">
+                <div class="dotsWrapper4">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <div class="dotsWrapper4">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+            <div class="side side-5">
+                <div class="dotsWrapper5">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <div class="dotsWrapper5">
+                    <div class="dot dotCenter"></div>
+                </div>
+                <div class="dotsWrapper5">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+            <div class="side side-6">
+                <div class="dotsWrapper6">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <div class="dotsWrapper6">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="cubeWrapper">
+        <div id="cube3" class="cube" style="transform: rotateX(5deg) rotateY(-5deg) rotateZ(0deg); display: none;">
+            <div class="side side-1">
+                <div class="dot dotCenter"></div>
+            </div>
+            <div class="side side-2">
+                <div class="dot"></div>
+                <div class="dot dotDownRight"></div>
+            </div>
+            <div class="side side-3">
+                <div class="dot"></div>
+                <div class="dot dotCenter"></div>
+                <div class="dot dotDownRight"></div>
+            </div>
+            <div class="side side-4">
+                <div class="dotsWrapper4">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <div class="dotsWrapper4">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+            <div class="side side-5">
+                <div class="dotsWrapper5">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <div class="dotsWrapper5">
+                    <div class="dot dotCenter"></div>
+                </div>
+                <div class="dotsWrapper5">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+            <div class="side side-6">
+                <div class="dotsWrapper6">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+                <div class="dotsWrapper6">
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                    <div class="dot"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div id="baks">Бакс: -</div>
+<div class="buttonsContainer">
+    <button id="newGameButton" class="buttons" onclick="window.location.reload()">Нова гра</button>
+    <button id="throwButton" class="buttons">Кинути кубик</button>
+    <div class="selectAndDesc">
+        <div class="selectDesc">К-сть кубиків</div>
+        <select id="cubesCount" class="cubesCount buttons" onchange="selectCubesCount(parseInt(this.value))" disabled>
+            <option class="cubesCount">1</option>
+            <option class="cubesCount">2</option>
+            <option class="cubesCount" selected>3</option>
+        </select></div>
+</div>
+</body>
+<script src="index.js"></script>
+</html>

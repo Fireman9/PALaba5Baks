@@ -1,0 +1,93 @@
+.cubeWrapper {
+    width: 100px;
+    height: 100px;
+    margin: 50px;
+}
+
+.cube {
+    position: absolute;
+    transform-style: preserve-3d;
+    transform-origin: 50px 50px;
+    transition: all 3s linear;
+}
+
+.side {
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    border: 1px solid #d3d3d3;
+    background: #999;
+}
+
+.side-1 {
+    transform: translateZ(50px);
+    display: flex;
+    justify-content: center;
+}
+
+.side-2 {
+    transform: rotateY(90deg) translateZ(50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.side-3 {
+    transform: rotateX(90deg) translateZ(50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.side-4 {
+    transform: rotateX(-90deg) translateZ(50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.side-5 {
+    transform: rotateY(-90deg) translateZ(50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.side-6 {
+    transform: rotateX(-180deg) translateZ(50px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.dot {
+    background-color: #000;
+    width: 20px;
+    height: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 2px #000;
+    margin: 5px;
+}
+
+.dotsWrapper4 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.dotsWrapper5 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.dotsWrapper6 {
+    display: flex;
+    justify-content: space-around;
+}
+
+.dotCenter {
+    align-self: center;
+}
+
+.dotDownRight {
+    align-self: flex-end;
+}
